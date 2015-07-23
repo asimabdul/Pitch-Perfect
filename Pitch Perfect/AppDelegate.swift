@@ -13,9 +13,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                             
     var window: UIWindow?
 
-
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
         // Override point for customization after application launch.
+
+        var navigationBarAppearance = UINavigationBar.appearance()
+        navigationBarAppearance.barTintColor = UIColor(red: 79.0/255.0, green: 146.0/255.0, blue: 249.0/255.0, alpha: 1.0)
+        if let font = UIFont(name: "Menlo-BoldItalic", size: 17.0) {
+            navigationBarAppearance.titleTextAttributes = [NSFontAttributeName: font]
+        }
         return true
     }
 

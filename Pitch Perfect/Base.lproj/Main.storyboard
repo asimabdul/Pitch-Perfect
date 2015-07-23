@@ -44,7 +44,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="dd1-pC-y0Z" secondAttribute="centerX" constant="-2" id="V1R-4y-Gyd"/>
                             <constraint firstItem="zQ0-Uc-oEI" firstAttribute="top" secondItem="6tV-NF-FSg" secondAttribute="bottom" constant="25" id="cko-UR-cd0"/>
@@ -84,7 +84,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="cXU-FA-0oR"/>
+                    <navigationItem key="navigationItem" title="Record" id="cXU-FA-0oR"/>
                     <connections>
                         <outlet property="recordButton" destination="6tV-NF-FSg" id="fw2-0a-qPJ"/>
                         <outlet property="recordingStatus" destination="zQ0-Uc-oEI" id="JLj-HX-v06"/>
@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="907.5" y="721.5"/>
         </scene>
-        <!--Play Sounds View Controller-->
+        <!--Play-->
         <scene sceneID="GmX-sc-ziJ">
             <objects>
-                <viewController id="y2P-tz-qBd" customClass="PlaySoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Play" id="y2P-tz-qBd" customClass="PlaySoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Azv-mo-sxv"/>
                         <viewControllerLayoutGuide type="bottom" id="fu5-4X-3l1"/>
