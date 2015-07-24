@@ -47,8 +47,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "segueShowPlaySounds") {
-            let playSoundsVC = segue.destinationViewController as PlaySoundsViewController
-            let data = sender as RecordedAudio
+            let playSoundsVC = segue.destinationViewController as! PlaySoundsViewController
+            let data = sender as! RecordedAudio
             playSoundsVC.receivedAudio = data
         }
     }
@@ -60,7 +60,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         recordingStatus.text = "recording..."
         recordingStatus.hidden = false
         
-        let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+        let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as! String
         
         var recordingName = "my_audio.wav"
         var pathArray = [dirPath, recordingName]
